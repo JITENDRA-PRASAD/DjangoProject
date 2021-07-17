@@ -1,0 +1,49 @@
+.container {
+    background:rgb(14, 45, 138);
+    display:inline-flex;
+    width: 100%;
+}
+    .container img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .container .row {
+        color: white;
+        text-align: right;
+        display: inline-flex;
+        width: 100%;
+    }
+    .container .row .col {
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .container .row .col a {
+        text-align: right;
+        display: inline-flex;
+        color: white;
+    }
+    .container .row .col-1 {
+        text-align: right;
+        width: 100%;
+        padding: 20px;
+    }
+    .container .row .col-1 a {
+        text-align: right;
+        display: inline-flex;
+        color: white;
+    }
+
+.ranker {
+    margin: 30px;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.homepage {
+    display: inline-flex;
+}
+.homepage h2 a{
+    color: black;
+}

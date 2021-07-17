@@ -1,0 +1,27 @@
+.container {
+    background:rgb(14, 45, 138);
+    display:inline-flex;
+    width: 100%;
+}
+.container img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70px;
+    height: 70px;
+}
+.container .row {
+    color: white;
+    text-align: right;
+    display: inline-flex;
+    width: 100%;
+}
+.container .row .col {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+}
+.container .row .col a {
+    text-align: right;
+    display: inline-flex;
+    color: white;
+}

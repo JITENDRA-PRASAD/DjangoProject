@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'quizapp/questionshow.css' %}" />
+    <title>Questions</title>
+</head>
+<body>
+    <div class='header'>
+        <h2> Question No. {{ option.id }}</h2>
+    </div>
+    <div class='container'>
+        {% if option.id == 1 %}
+            <h3> Lifeline Not include on this question</h3>
+        {% endif %}
+        <div class="marks">
+            <p> Marks : {{ score }} </p>
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="question">
+                {{ option.question }}<br>
+            </div>
+            <div class="option">
+                <input type="radio" id="answer" name="answer" value="{{ option.optiona }}">
+                {{ option.optiona }}<br>
+                <input type="radio" id="answer" name="answer" value="{{ option.optionb }}">
+                {{ option.optionb }}<br>
+                <input type="radio" id="answer" name="answer" value="{{ option.optionc }}">
+                {{ option.optionc }}<br>
+                <input type="radio" id="answer" name="answer" value="{{ option.optiond }}">
+                {{ option.optiond }}<br>
+            </div>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>

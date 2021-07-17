@@ -1,0 +1,43 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'quizapp/features.css' %}" />
+    <title> KBC </title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="{% static 'kbc.jpeg' %}" />
+            </div>
+            <div class="col">
+                <h1> WELCOME TO KBC </h1>
+            </div>
+            <div class="col-1">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}">LogOut ({{ user.username|title }})</a>
+                {% else %}
+                    <a href="{% url 'singup' %}">SingUp</a><span>|</span>
+                    <a href="{% url 'login' %}"> LogIn </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        {% if user.is_authenticated %}
+        <div class='center'>
+            <button type='button'><a href="{% url 'top_ranker' %}"> Top Ranker  </a></button> <br>
+            <button type='button'><a href="{% url 'question_show' id=1 %}" >Start Quiz</a></button>
+        </div>
+        {% else %}
+        <h4> Please LogIn and Get Access To Won Money With Quiz </h4>
+        {% endif %}
+    </div>
+</body>
+</html>

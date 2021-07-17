@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:rgb(172, 235, 121);
+    color: rgb(5, 0, 0);
+}
+form {
+    text-align: center;
+    background-color: blue;
+    height: 400px; 
+    padding-top: 80px;
+}

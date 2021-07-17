@@ -1,0 +1,59 @@
+.container {
+    background:rgb(14, 45, 138);
+    display:inline-flex;
+    width: 100%;
+}
+    .container img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .container .row {
+        color: white;
+        text-align: right;
+        display: inline-flex;
+        width: 100%;
+    }
+    .container .row .col {
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .container .row .col a {
+        text-align: right;
+        display: inline-flex;
+        color: white;
+    }
+    .container .row .col-1 {
+        text-align: right;
+        width: 100%;
+        padding: 20px;
+    }
+    .container .row .col-1 a {
+        text-align: right;
+        display: inline-flex;
+        color: white;
+    }
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.main .center {
+    width: 59%;
+    height: 50%;
+    background-color: darkgray;
+    margin: 30px;
+    padding: 100px;
+    padding-left: 300px;
+}
+
+.main .center button {
+    margin: 30px;
+    width: 100px;
+    height: 50px;
+    color: black;
+    background-color: rgb(122, 169, 238);
+}

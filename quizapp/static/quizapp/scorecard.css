@@ -1,0 +1,55 @@
+.container {
+    background:rgb(14, 45, 138);
+    display:inline-flex;
+    width: 100%;
+}
+    .container img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    .container .row {
+        color: white;
+        text-align: right;
+        display: inline-flex;
+        width: 100%;
+    }
+    .container .row .col {
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .container .row .col a {
+        text-align: right;
+        display: inline-flex;
+        color: white;
+    }
+    .container .row .col-1 {
+        text-align: right;
+        width: 100%;
+        padding: 20px;
+    }
+    .container .row .col-1 a {
+        text-align: right;
+        display: inline-flex;
+        color: white;
+    }
+.main {
+    color: black;
+    background-color: rgba(47, 235, 10, 0.973);
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+    margin-left: 240px;
+}
+    .main button{
+        color: black;
+        background-color: rgb(182, 182, 250);
+        width: 100px;
+        height: 30px;
+        margin-top: 50px;
+    }

@@ -1,0 +1,51 @@
+
+.header {
+    background-color: rgb(10, 10, 153);
+    text-align: center;
+    height: 100px;
+}
+.header h2 {
+    padding-top: 30px;
+    color: white;
+}
+.container {
+    background-color: darkgray;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 130px;
+}
+.container .marks {
+    margin-top: 30px;
+    width: 95%;
+    text-align: right;
+    background-color: darkgray;
+    padding: 30px;
+}
+.container .marks p {
+    color: red;
+    background-color: white;
+    padding-right: 100px;
+}
+.container .question {
+    padding-top: 30px;
+    text-align: left;
+    background-color:darkgray;
+    color: black;
+    font:bold;
+    font-size: 30px;
+    padding-left: 200px;
+}
+.container .option {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 210px;
+    font-size: 20px;
+}
+button {
+    color: rgb(253, 255, 255);
+    background-color: rgb(17, 17, 109);
+    width: 100px;
+    height: 40px;
+}
