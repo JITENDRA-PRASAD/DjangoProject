@@ -112,3 +112,22 @@ class MyScore(LoginRequiredMixin ,View):
         return render(request,"quizapp/myscore.html",{
             'score': data
         })
+
+class QuestionCreate(LoginRequiredMixin,View):
+    login_url = 'login'
+    def get(self, request):
+        form = QuestionCreateForm()
+        return render(request, "quizapp/questioncreate.html",{
+            "forms":form
+        })
+
+    def post(self,request):
+        question = QuestionCreateForm(request.POST)
+        if question.is_valid():
+            question.save()
+            print("question is   ",question)
+            return render(request,"quizapp/sucessquestion.html")
+        form = QuestionCreateForm()
+        return render(request, "quizapp/questioncreate.html",{
+            "forms":form
+        })

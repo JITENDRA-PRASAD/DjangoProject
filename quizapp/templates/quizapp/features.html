@@ -30,10 +30,15 @@
         </div>
     </div>
     <div class="main">
+        <h1> Please Choose Your Option </h1>
         {% if user.is_authenticated %}
         <div class='center'>
-            <button type='button'><a href="{% url 'top_ranker' %}"> Top Ranker  </a></button> <br>
-            <button type='button'><a href="{% url 'question_show' id=1 %}" >Start Quiz</a></button>
+            <a href="{% url 'question_show' id=1 %}"><button type='button'>Start Quiz</button></a>
+            <a href="{% url 'my_score' %}"><button type="button">My Score</button></a>
+            <a href="{% url 'top_ranker' %}"><button type='button'>Top Ranker </button></a>
+            {% if  user.username == 'admin'%}
+            <a href="{% url 'question_create' %}"><button type='button'>Create Question </button></a>
+            {% endif %}
         </div>
         {% else %}
         <h4> Please LogIn and Get Access To Won Money With Quiz </h4>

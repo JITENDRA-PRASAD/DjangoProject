@@ -1,4 +1,6 @@
+
 {% load static %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,8 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'quizapp/thankyou.css' %}" />
-    <title>Thank you</title>
+    <link rel="stylesheet" href="{% static 'quizapp/sucessquestion.css' %}" />
+    <title>question created</title>
 </head>
 <body>
     <div class="container">
@@ -28,12 +30,11 @@
             </div>
         </div>
     </div>
-    <div class="home">
-        <a href="{% url 'Home_page' %}"><h1>Home</h1></a>
+    <div class="button">
+        <a href="{% url 'features' %}"><button>Home</button></a>
     </div>
-    <div class="content">
-        <h2>You Choose Wronge Answer And your 3 Lifeline is Fineshed</h2>
-        <h1>Thank You </h1>
+    <div class="sucess">
+        <h2>Question Created Sucessfully!</h2>
     </div>
 </body>
 </html>

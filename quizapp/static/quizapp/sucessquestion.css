@@ -35,24 +35,3 @@
         display: inline-flex;
         color: white;
     }
-
-.main .center {
-    display: flex;
-    text-align: center;
-    padding: 40px;
-}
-
-.main .center a {
-    width: 900px;
-    height: 270px;
-    padding: 30px;
-    padding-top: 50px;
-    background-color: rgb(216, 250, 162);
-    color: black;
-}
-button {
-    margin-top: 75px;
-    width: 250px;
-    height: 40px;
-    border-radius: 20px;
-}

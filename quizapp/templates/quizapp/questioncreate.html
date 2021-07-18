@@ -13,14 +13,13 @@
     <header>
         <h3> Add question </h3>
     </header>
-    <div class='form'>
-        {{ form.non_field_errors }}
-        <form mehtod="POST">
+    <div class='form' >
+        <form method="POST" action="">
             {% csrf_token %}
             {% for field in forms %}
-                {{ field.name }}<br>
-                {{ field }}<br>
-                {{ field.errors }}<br>
+                <div>{{ field.name }}</div>
+                <div>{{ field }}</div>
+                <div>{{ field.errors }}</div>
             {% endfor %}
             <button type='submit' > Add Question </button>
         </form>
