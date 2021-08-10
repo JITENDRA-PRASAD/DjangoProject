@@ -37,17 +37,15 @@ class QuestionShow(LoginRequiredMixin, View):
     def get(self,request,id):
         try:
             questions = QuestionModel.objects.all().get(id=id)
-            if id != 1:
-                score = ScoreModel.objects.get(name=request.user.username)
-                return render(request, "quizapp/questionshow.html",{
-                    "option":questions,
-                    "score" :score.marks
-                })
+            if id == 1:
+                score = 0
             else:
-                return render(request, "quizapp/questionshow.html",{
-                    "option":questions,
-                    "score" : 0
-                })
+                scorecard = ScoreModel.objects.get(name=request.user.username)
+                score = scorecard.marks
+            return render(request, "quizapp/questionshow.html",{
+                "option":questions,
+                "score" :score
+            })
         except Exception as e:
             score = ScoreModel.objects.get(name=request.user.username)
             return render(request,"quizapp/scorecard.html",{
